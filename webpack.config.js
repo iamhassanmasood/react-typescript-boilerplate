@@ -24,6 +24,14 @@ module.exports = {
         use: "ts-loader",
         exclude: "/node_modules/",
       },
+      {
+        test: /\.(css|less)$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
+        use: ["file-loader"],
+      },
     ],
   },
   output: {
