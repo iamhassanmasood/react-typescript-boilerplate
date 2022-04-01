@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./App.less";
 export const App = () => {
-  return <h1>React Typescript</h1>;
+  return <h1 className="app">React Typescript</h1>;
 };
